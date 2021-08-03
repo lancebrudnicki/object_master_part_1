@@ -3,10 +3,12 @@ package com.objectmaster;
 public class HumanTest {
 
 	public static void main(String[] args) {
-		Human human1 = new Human();
-		Human human2 = new Human();
-		human1.attack(human2);
-		
+		Wizard wizard = new Wizard();
+		Ninja ninja = new Ninja();
+		Samurai samurai = new Samurai();
+		wizard.fireball(samurai);
+		ninja.steal(samurai);
+		samurai.deathblow(ninja);
 	}
 
 }
